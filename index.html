@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Weather Forecast</title>
+</head>
+
+<body style="background-image: linear-gradient(to left bottom, #051937, #0b1d34, #122031, #19232d, #212529);">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Weather Update
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <span class="navbar-text"> Live updates </span>
+      </div>
+    </div>
+  </nav>
+  <div class="card bg-dark text-white w-75 mx-auto my-5 border border-5 border-success">
+    <img src="img/weather-2.jpg" class="card-img" alt="" width="300" height="500" style="filter: brightness(50%);" />
+    <div class="card-img-overlay p-4">
+      <div class="contents d-flex justify-content-between">
+        <div class="content-1">
+          <h5 class="card-title" id="des" style="text-transform: capitalize;"></h5>
+          <p class="card-text text-warning" id="name"></p>
+          <h1 class="card-text" id="current_temp"></h1>
+          <p class="card-text text-warning lh-1" id="feels_like_temp"></p>
+          <p class="card-text text-success fs-5" id="country"></p>
+        </div>
+        <div class="content-2">
+          <div class="" id="image_icon"></div>
+        </div>
+        <div class="content-3 lh-1">
+          <p class="card-text text-warning">Humidity</p>
+          <h5 class="card-title mb-3" id="humidity"></h5>
+          <p class="card-text text-warning">Air Pressure</p>
+          <h5 class="card-title mb-3" id="pressure"></h5>
+          <p class="card-text text-warning">Visibility</p>
+          <h5 class="card-title mb-3" id="visibility"></h5>
+          <p class="card-text text-warning">Wind Speed</p>
+          <h5 class="card-title mb-3" id="speed_wind"></h5>
+        </div>
+      </div>
+      <div class="row text-center mt-5">
+        <div class="card mb-3 bg-transparent ms-auto me-auto" style="max-width: 10rem; border: none">
+          <div class="card-header text-warning" style="border: none;">Max Temp</div>
+          <div class="card-body">
+            <h5 class="card-title text-light" id="max_temp"></h5>
+          </div>
+        </div>
+        <div class="card mb-3 bg-transparent ms-auto me-auto" style="max-width: 10rem; border: none">
+          <div class="card-header text-warning" style="border: none;">Min Temp</div>
+          <div class="card-body">
+            <h5 class="card-title text-light" id="min_temp"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
